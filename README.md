@@ -55,6 +55,12 @@ Detailed addressing, firewall configuration, and other sensitive implementation 
 - Bash scripting
 - Packet capture and network troubleshooting
 
+## Recent Milestone
+
+On September 30, 2026 (UTC), I provisioned a dedicated Ubuntu VM on Proxmox and executed and verified guided, AI-assisted setup steps. SSH key authentication worked, password and keyboard-interactive login were rejected, and the guest agent remained active after reboot. I also observed 29 offline tests passing and a successful demo run for the UniFi API project.
+
+The first local live-read proof returned one site from a bounded official UniFi Network API sites-summary GET, with full TLS verification using a matching hostname and an application-specific CA bundle. I confirmed the temporary API key was revoked afterward; granular credential scope and an API rejection after revocation were not verified. These are my observed homelab results. This milestone does not complete Phase 1 or establish persistent AI/MCP access, network isolation, device/client inventory, Tailscale access, or write controls.
+
 ## Planned Labs and Projects
 
 - Document the current-state network
@@ -62,7 +68,7 @@ Detailed addressing, firewall configuration, and other sensitive implementation 
 - Create firewall rules between trusted and isolated networks
 - Deploy Windows Server and Active Directory Domain Services (AD DS)
 - Configure Domain Name System (DNS) and Dynamic Host Configuration Protocol (DHCP)
-- Build Linux server workloads in Proxmox
+- Expand Linux server workloads in Proxmox
 - Practice network and systems failure scenarios
 - Document incident troubleshooting and root-cause analysis
 - Create reusable PowerShell and Bash troubleshooting tools
